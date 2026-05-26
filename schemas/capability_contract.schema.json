@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/mcp-cortex/capability_contract.schema.json",
+  "title": "CapabilityContract",
+  "type": "object",
+  "required": ["capability", "version", "input_schema", "effects", "forbidden_effects", "requires", "assurance_level"],
+  "properties": {
+    "capability": { "type": "string", "pattern": "^capability://" },
+    "version": { "type": "string" },
+    "input_schema": { "type": "object" },
+    "effects": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "forbidden_effects": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "requires": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "assurance_level": { "enum": ["A0", "A1", "A2", "A3", "A4", "unknown"] },
+    "preconditions": { "type": "array", "items": { "type": "string" } },
+    "postconditions": { "type": "array", "items": { "type": "string" } },
+    "data_flow_rules": { "type": "array", "items": { "type": "object" } },
+    "rollback": { "type": ["object", "null"] },
+    "risk": { "type": "string" },
+    "attestation": { "type": ["object", "null"] }
+  },
+  "additionalProperties": false
+}

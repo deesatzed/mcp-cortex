@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/mcp-cortex/policy_decision.schema.json",
+  "title": "PolicyDecision",
+  "type": "object",
+  "required": ["allowed", "risk_class", "reasons", "required_approvals", "redactions", "issued_at"],
+  "properties": {
+    "allowed": { "type": "boolean" },
+    "risk_class": { "enum": ["green", "yellow", "orange", "red"] },
+    "reasons": { "type": "array", "items": { "type": "string" } },
+    "required_approvals": { "type": "array", "items": { "type": "string" } },
+    "redactions": { "type": "array", "items": { "type": "string" } },
+    "issued_at": { "type": "string" }
+  },
+  "additionalProperties": false
+}

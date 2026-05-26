@@ -1,0 +1,238 @@
+{
+  "name": "mcp-cortex",
+  "version": "0.2.0-alpha-reference",
+  "created_for": "Standalone GitHub publication as an alpha reference implementation",
+  "test_status": "11 pytest tests passed; all examples validated against schemas; CLI help rendered; local policy-gate demo ran",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "adbff5e75d73e4daf03e7ca06963fe1df67e38c3c90295f368d2caf8262fac7e",
+      "bytes": 778
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "f1e2f254567823d0164b5a5e6bac102a428e1902b1c841f1a0067066f125bd90",
+      "bytes": 185
+    },
+    {
+      "path": "CODEX_HANDOFF.md",
+      "sha256": "98c62e95f3545f851b4d99abf926a89a093ab0930a8cdea970087e08d59d9133",
+      "bytes": 3874
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "199d0a32ee16aa145fc9652a92fff35a6e6d525762b6949f61c48fab9f638afa",
+      "bytes": 1065
+    },
+    {
+      "path": "README.md",
+      "sha256": "653d59a818e9fb1b3e2d826232af76451701953492cb0c5c41f54218b0ad0a57",
+      "bytes": 5323
+    },
+    {
+      "path": "TEST_RESULTS.md",
+      "sha256": "13e3367cc4daa9961e9925275908838b31b7ad3c50014f5c29e2efd27c97678b",
+      "bytes": 890
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "4cdf8b2596ed1fabf6a935f0a7485eb32a51a591421477bb680c4a3bf21d6583",
+      "bytes": 1793
+    },
+    {
+      "path": "docs/MCP_COMPATIBILITY.md",
+      "sha256": "f60881da4ba6524769cfba826367cae400f913bcf326d5a20db955504032551e",
+      "bytes": 2154
+    },
+    {
+      "path": "docs/REFERENCES.md",
+      "sha256": "260446dbd3efc440b2f493324cc6b440252abf980c86f8df51b149ea18057bed",
+      "bytes": 1312
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "sha256": "6666b6f0ce049731bcb9af946dbfb818980f105e59c1f8417b016f847798f2f4",
+      "bytes": 1199
+    },
+    {
+      "path": "docs/SECURITY_MODEL.md",
+      "sha256": "fe763c6d13769385ee230183f45c4ffc705c88ec2f54f87a6f08c2388d0ed7ba",
+      "bytes": 2991
+    },
+    {
+      "path": "docs/SELF_CRITIQUE_AND_MITIGATIONS.md",
+      "sha256": "a5a74c801c111bb3d6f1f48faa3222bb19c9bfaf283fa051942a04c327c3b64d",
+      "bytes": 8251
+    },
+    {
+      "path": "docs/SPECIFICATION.md",
+      "sha256": "e46cdf4e1782bad3bc3e97b2779c770461b723dbeafc69f054256d48437da7e8",
+      "bytes": 5195
+    },
+    {
+      "path": "docs/UX_RISK_MODEL.md",
+      "sha256": "621968660640e73c5fec8ddaa87b22f723dc5176a604f348021225e0ead8822a",
+      "bytes": 2601
+    },
+    {
+      "path": "examples/belief_claim_import_mismatch.json",
+      "sha256": "ca5b452f802a6ef024f9872c17b5b889d9470f79cc6b038fa5d48177c4c3a599",
+      "bytes": 371
+    },
+    {
+      "path": "examples/context_cell_build_failure.json",
+      "sha256": "8628a06b3b5e6ab3362e158dd6510e855093592ddcb15971a0c302ca25523568",
+      "bytes": 676
+    },
+    {
+      "path": "examples/demo_policy_gate.py",
+      "sha256": "38a15071af6b6251d3ea7925f36e747f74d3faf009d7a2d36b92dfafd2e18dc0",
+      "bytes": 2071
+    },
+    {
+      "path": "examples/external_api_capability.json",
+      "sha256": "736be28c7b244c6d3bfcda2d588b2d220bac490a06d9ed6d98fd1cb0ea27a2bb",
+      "bytes": 764
+    },
+    {
+      "path": "examples/phi_egress_intent.json",
+      "sha256": "d6304a22b36248f90d4b29318126bad5147607093b168c67f766f8866d4b76c7",
+      "bytes": 463
+    },
+    {
+      "path": "examples/safe_patch_intent.json",
+      "sha256": "7bf5c2938e2628a085327fb5461adb2351759c79c4c48161cb6635b97b3a3505",
+      "bytes": 591
+    },
+    {
+      "path": "examples/sandbox_pytest_capability.json",
+      "sha256": "b83f6f0f7ed5238a0c35de7de79b8091a5ad87e2ec73d8b9bb4194756ea5df40",
+      "bytes": 991
+    },
+    {
+      "path": "examples/trace_event_policy_checked.json",
+      "sha256": "467991eee96122b76a04165ec7cf6c1f568e3ca6ddde3b71468821cf5a8349b2",
+      "bytes": 561
+    },
+    {
+      "path": "package_manifest.json",
+      "sha256": "11b0e5f3eb5d946287f001b5b29bd7e4b007bbfa6aec88106f84ee877844b577",
+      "bytes": 6776
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "cc1a9e10af366b6175f4ea87c8565341bd6ab654cebf03b88193a7916b25a255",
+      "bytes": 1366
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "d6e3e89cc6aab7944c11e4a14fb0a4db51c9ae36606bf263f47b7a9378f6de65",
+      "bytes": 44
+    },
+    {
+      "path": "schemas/belief_claim.schema.json",
+      "sha256": "3acbe8666b71cb334beb6e3f01257471779611b3036d0b31b50d68dd9e657f92",
+      "bytes": 774
+    },
+    {
+      "path": "schemas/capability_contract.schema.json",
+      "sha256": "ea69dc3cee046d055550e68e862fbbefb41894008618fc807591a41e2e959482",
+      "bytes": 1223
+    },
+    {
+      "path": "schemas/context_cell.schema.json",
+      "sha256": "bc42ee90bff0ed6ed5943eb93c51614a748d8cb9d9cdbe426736d12ab2547f78",
+      "bytes": 1261
+    },
+    {
+      "path": "schemas/intent.schema.json",
+      "sha256": "a62d78232b894ceddf42f6d4329843c613124fa80a7727bfd2b2c65e6c756262",
+      "bytes": 862
+    },
+    {
+      "path": "schemas/policy_decision.schema.json",
+      "sha256": "b553cff7a912ea704e46a76cb9a68cc5276f4504d545538e7388918239e70f10",
+      "bytes": 700
+    },
+    {
+      "path": "schemas/trace_event.schema.json",
+      "sha256": "9a1c9def043cffc8b3099ccff9b764a9e3cd7432250f09cb011d804549fc9d18",
+      "bytes": 648
+    },
+    {
+      "path": "scripts/validate_examples.py",
+      "sha256": "c49290d1d60e70974ebf1b677358143d992ab3529984c8b026ef7bb15eed2330",
+      "bytes": 1643
+    },
+    {
+      "path": "src/mcp_cortex/__init__.py",
+      "sha256": "06a4528e2f0aae6ed82d3b1b5571bce068dee951842f8d90f840e208787b8503",
+      "bytes": 654
+    },
+    {
+      "path": "src/mcp_cortex/adapter.py",
+      "sha256": "b4d2c5e810386416ae370b0aa7096efc5b04b5b19ee90c23b08f9ab2c27a9877",
+      "bytes": 1977
+    },
+    {
+      "path": "src/mcp_cortex/cli.py",
+      "sha256": "50d1c7b336c733521a8c49ed77293b20eeb00271633169a1afd73d30404a6f6f",
+      "bytes": 3564
+    },
+    {
+      "path": "src/mcp_cortex/fabric.py",
+      "sha256": "f226a3ccad1afbae1e9a7fafc23bdaadb22f25e816a620592996a9dc23b63568",
+      "bytes": 2192
+    },
+    {
+      "path": "src/mcp_cortex/gateway.py",
+      "sha256": "cb366200336eb62c47b4dd33a314c45f7e49406c74c923515706e00f50a46aa3",
+      "bytes": 2865
+    },
+    {
+      "path": "src/mcp_cortex/models.py",
+      "sha256": "0ca0a8454bad2993931414bc46f1f453b6c40320776b168f7d1cdb04e8ab047e",
+      "bytes": 4936
+    },
+    {
+      "path": "src/mcp_cortex/policy.py",
+      "sha256": "fe1fefbe39f995a4481b832ef77ce4534b4fa57254c18b0c6dcc10c3dd721f2b",
+      "bytes": 4963
+    },
+    {
+      "path": "src/mcp_cortex/trace.py",
+      "sha256": "3c21ef9a4c8b5d28b4a4cc061686b85a39249b6f6599547b981fe65d3637bd6e",
+      "bytes": 795
+    },
+    {
+      "path": "tests/test_adapter.py",
+      "sha256": "3a8ea692f6bf0a429244f426c3b44a87ac80ea78cccb991520ae6f1acc1a9696",
+      "bytes": 808
+    },
+    {
+      "path": "tests/test_demo_policy_gate.py",
+      "sha256": "75f1dcc5d48f2c6500782672e8a45fdef41f78d719f20139e5e2e0e8b2520a7a",
+      "bytes": 382
+    },
+    {
+      "path": "tests/test_fabric.py",
+      "sha256": "dbfc5eeff330f200a55a6d2a765d56ee5a5c6b595b00fa17d32537fce1cadf8f",
+      "bytes": 772
+    },
+    {
+      "path": "tests/test_gateway_trace.py",
+      "sha256": "97d87c596024c7dbfbbb40c7b60a0e84c8684ab399a388a35ff4c009b2035c3d",
+      "bytes": 1358
+    },
+    {
+      "path": "tests/test_policy_engine.py",
+      "sha256": "26b77ae304bdf96f256db45bd8fe03c7711b8c71f1a2eabea49e23682baaecac",
+      "bytes": 2896
+    },
+    {
+      "path": "tests/test_schema_examples.py",
+      "sha256": "65fc7039cbd3cc5a0fbc001e1be18a36d89fdd89086728055d2f1f11c843a498",
+      "bytes": 943
+    }
+  ]
+}

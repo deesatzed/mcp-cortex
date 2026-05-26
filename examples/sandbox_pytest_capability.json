@@ -1,0 +1,25 @@
+{
+  "capability": "capability://sandbox/pytest",
+  "version": "1.0.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "path": { "type": "string" },
+      "args": { "type": "array", "items": { "type": "string" } }
+    },
+    "required": ["path"]
+  },
+  "effects": ["read:file", "write:sandbox", "execute:test"],
+  "forbidden_effects": ["read:secrets", "write:production", "network:external", "deploy:production"],
+  "requires": ["policy_proof", "sandbox_attestation", "trace_log"],
+  "assurance_level": "A2",
+  "preconditions": ["workspace.branch == sandbox", "network.external == disabled"],
+  "postconditions": ["test_results.logged == true"],
+  "data_flow_rules": [
+    { "from": "untrusted_text", "to": "execute:test", "allowed": true },
+    { "from": "PHI", "to": "network:external", "allowed": false }
+  ],
+  "rollback": { "mode": "workspace_checkpoint" },
+  "risk": "low",
+  "attestation": { "sandbox": "local", "network": "disabled", "secrets_access": "none" }
+}

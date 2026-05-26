@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/mcp-cortex/intent.schema.json",
+  "title": "Intent",
+  "type": "object",
+  "required": ["id", "goal", "requested_effects", "constraints", "requester"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^intent://" },
+    "goal": { "type": "object" },
+    "requested_effects": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "constraints": { "type": "object" },
+    "requester": { "type": "string" },
+    "context_refs": { "type": "array", "items": { "type": "string" } },
+    "success_metrics": { "type": "array", "items": { "type": "string" } },
+    "deadline": { "type": ["string", "null"] },
+    "status": { "enum": ["proposed", "approved", "running", "blocked", "completed", "failed"] }
+  },
+  "additionalProperties": false
+}

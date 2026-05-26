@@ -1,0 +1,16 @@
+{
+  "id": "intent://unsafe-phi-egress/1",
+  "goal": {
+    "desired_state": "send patient summary to external service",
+    "summary": "This example should be blocked."
+  },
+  "requested_effects": ["read:context", "network:external"],
+  "constraints": {
+    "no_external_network": false
+  },
+  "requester": "agent://clinical-assistant",
+  "context_refs": ["ctx://patient/example/labs/latest"],
+  "success_metrics": [],
+  "deadline": null,
+  "status": "proposed"
+}

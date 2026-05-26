@@ -1,0 +1,10 @@
+{
+  "id": "belief://repo/cam-pulse/import-mismatch/1",
+  "claim": "The build failure is likely caused by a missing ThompsonSampler import.",
+  "confidence": 0.91,
+  "evidence": ["ctx://repo/cam-pulse/build/2026-05-22T14-00-00Z"],
+  "publisher": "agent://debugger",
+  "counterevidence": [],
+  "review_status": "machine_verified",
+  "validity": { "until": "next_build" }
+}

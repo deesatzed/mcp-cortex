@@ -1,0 +1,17 @@
+{
+  "id": "intent://make-tests-green/42",
+  "goal": {
+    "desired_state": "repo.tests.green",
+    "summary": "Apply a minimal sandbox patch so the test suite passes."
+  },
+  "requested_effects": ["read:file", "write:sandbox", "execute:test"],
+  "constraints": {
+    "no_external_network": true,
+    "max_effects": ["read:file", "write:sandbox", "execute:test"]
+  },
+  "requester": "agent://debugger",
+  "context_refs": ["ctx://repo/cam-pulse/build/2026-05-22T14-00-00Z"],
+  "success_metrics": ["all_tests_pass", "diff_minimality_score >= 0.8"],
+  "deadline": null,
+  "status": "proposed"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/mcp-cortex/trace_event.schema.json",
+  "title": "TraceEvent",
+  "type": "object",
+  "required": ["id", "event_type", "actor", "refs", "payload", "timestamp", "digest"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^trace://" },
+    "event_type": { "type": "string" },
+    "actor": { "type": "string" },
+    "refs": { "type": "array", "items": { "type": "string" } },
+    "payload": { "type": "object" },
+    "timestamp": { "type": "string" },
+    "digest": { "type": "string", "pattern": "^sha256:" }
+  },
+  "additionalProperties": false
+}

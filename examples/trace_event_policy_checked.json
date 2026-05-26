@@ -1,0 +1,18 @@
+{
+  "id": "trace://policy-check/example-1",
+  "event_type": "policy.checked",
+  "actor": "policy://default",
+  "refs": ["intent://make-tests-green/42", "capability://sandbox/pytest"],
+  "payload": {
+    "decision": {
+      "allowed": true,
+      "risk_class": "green",
+      "reasons": ["Policy allowed requested effects."],
+      "required_approvals": [],
+      "redactions": [],
+      "issued_at": "2026-05-22T14:01:00Z"
+    }
+  },
+  "timestamp": "2026-05-22T14:01:00Z",
+  "digest": "sha256:5e4f8d3ce811f67657f4e60f4a31574358ab8d7e588aacd5ad0cd1dfe7a1a111"
+}

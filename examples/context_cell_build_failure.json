@@ -1,0 +1,22 @@
+{
+  "id": "ctx://repo/cam-pulse/build/2026-05-22T14-00-00Z",
+  "schema": "cortex.build.result.v1",
+  "summary": "Build failed in optimizer.py due to missing ThompsonSampler import.",
+  "labels": ["code", "untrusted_text"],
+  "provenance": {
+    "source": "capability://sandbox/pytest",
+    "timestamp": "2026-05-22T14:00:00Z",
+    "actor": "agent://debugger"
+  },
+  "version": 1,
+  "payload": {
+    "exit_code": 1,
+    "failing_test": "tests/test_optimizer.py::test_bandit_selection",
+    "stderr_excerpt": "NameError: name 'ThompsonSampler' is not defined"
+  },
+  "payload_ref": null,
+  "links": [],
+  "confidence": 0.97,
+  "ttl_seconds": null,
+  "trust_level": "verified"
+}

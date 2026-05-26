@@ -1,0 +1,25 @@
+{
+  "capability": "capability://external/api-post",
+  "version": "1.0.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "url": { "type": "string" },
+      "body": { "type": "object" }
+    },
+    "required": ["url", "body"]
+  },
+  "effects": ["read:context", "network:external"],
+  "forbidden_effects": ["read:secrets", "write:production", "deploy:production"],
+  "requires": ["policy_proof", "trace_log"],
+  "assurance_level": "A1",
+  "preconditions": [],
+  "postconditions": ["response.logged == true"],
+  "data_flow_rules": [
+    { "from": "PHI", "to": "network:external", "allowed": false },
+    { "from": "PII", "to": "network:external", "allowed": false }
+  ],
+  "rollback": { "mode": "none" },
+  "risk": "high",
+  "attestation": null
+}

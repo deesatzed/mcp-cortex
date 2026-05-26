@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-cortex"
+version = "0.2.0"
+description = "Alpha reference harness for MCP capability, context, policy, and trace metadata"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Dee Satz" }]
+maintainers = [{ name = "Dee Satz" }]
+license = { file = "LICENSE" }
+dependencies = []
+keywords = ["mcp", "model-context-protocol", "policy", "tool-safety", "traceability"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed"
+]
+
+[project.urls]
+Homepage = "https://github.com/deesatzed/mcp-cortex"
+Repository = "https://github.com/deesatzed/mcp-cortex"
+Issues = "https://github.com/deesatzed/mcp-cortex/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "jsonschema>=4.0"
+]
+
+[project.scripts]
+mcp-cortex = "mcp_cortex.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
